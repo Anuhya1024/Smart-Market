@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Admin Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="../css/style1.css" />
+       <style>
+            	ul li {
+			padding-left: 0.5em;
+                        float:left;       
+		}
+		ul.actions {
+			cursor: default;
+			list-style: none;
+			padding-left: 0;
+		}
+			ul.actions li {
+				display: inline-block;
+				padding: 0 1em 0 0;
+				vertical-align: middle;
+			}
+				ul.actions li:last-child {
+					padding-right: 0;
+				}
+	.button {
+		background-color: #3ba666;
+		border-radius: 4px;
+		border: 0;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 400;
+		height: 2.85em;
+		line-height: 2.8em;
+		padding: 0 2em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+        .list{
+            text-align: center;
+        }
+            </style>    
+    </head>
+    <body>
+        <header id="header">
+				<h1><font color="skyblue"><a href="HomePage.html">SMART MARKET</a></font></h1>
+				<nav id="nav">
+					<ul>
+						<li><font color="skyblue"><a href="AdminHome.html">HOME</a></font></li>
+						<li><font color="skyblue"><a href="HomePage.html">LOGOUT</a></font></li>
+						<li><font color="skyblue">About Us</font></li>
+					</ul>
+				</nav>
+			</header>
+        <div class="list">  <ul class="actions">
+					<li>
+                                            <p></p>
+                                            <a href="../jsp/AdminViewItems.jsp" class="button">View items.... </a><br><br>
+                                                <a href="./AdminDeleteItems.html" class="button">Delete Items</a><br><br>
+                                                <a href="./AdminAddItems.html" class="button">Add Items</a><br><br>
+                                                <a href="../jsp/AdminUserDetails.jsp" class="button">User Details</a>
+                                        </li>                             
+            </ul> </div>                
+    </body>
+</html>

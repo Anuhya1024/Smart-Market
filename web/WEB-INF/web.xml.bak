@@ -1,0 +1,456 @@
+<web-app>
+	<servlet>
+		<servlet-name>adminlogin</servlet-name>
+		<servlet-class>Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminlogin</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>activities</servlet-name>
+		<servlet-class>Activities</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>activities</servlet-name>
+		<url-pattern>/activity</url-pattern> 
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>user</servlet-name>
+		<servlet-class>RegisterUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>user</servlet-name>
+		<url-pattern>/newuser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>user1</servlet-name>
+		<servlet-class>EditUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>user1</servlet-name>
+		<url-pattern>/edituser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>simsale</servlet-name>
+		<servlet-class>SimSales</servlet-class>    
+	</servlet>     
+	<servlet-mapping>
+		<servlet-name>simsale</servlet-name>
+		<url-pattern>/simsales</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addsimsale</servlet-name>
+		<servlet-class>ProcessSimSales</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addsimsale</servlet-name>
+		<url-pattern>/addsimsales</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>activate</servlet-name>
+		<servlet-class>SimActivation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>activate</servlet-name>
+		<url-pattern>/simact</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>activation</servlet-name>
+		<servlet-class>ProcessSimActivation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>activation</servlet-name>
+		<url-pattern>/simactivate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>easysales</servlet-name>
+		<servlet-class>EasySales</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>easysales</servlet-name>
+		<url-pattern>/easysale</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>easyamtsales</servlet-name>
+		<servlet-class>ProcessEasySales</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>easyamtsales</servlet-name>
+		<url-pattern>/easyamtsale</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>papersales</servlet-name>
+		<servlet-class>PaperSales</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>papersales</servlet-name>
+		<url-pattern>/papersale</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>paperrcsales</servlet-name>
+		<servlet-class>PaperRcSale</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>paperrcsales</servlet-name>
+		<url-pattern>/paperrcsale</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>distinfos</servlet-name>
+		<servlet-class>AddDistributor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>distinfos</servlet-name>
+		<url-pattern>/distinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>distinfos1</servlet-name>
+		<servlet-class>EditDistributor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>distinfos1</servlet-name>
+		<url-pattern>/distinfo1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>subinfos</servlet-name>
+		<servlet-class>Subscriber</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>subinfos</servlet-name>
+		<url-pattern>/subinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>subin</servlet-name>
+		<servlet-class>Subscriber1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>subin</servlet-name>
+		<url-pattern>/subinfo1</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>addsubinfos</servlet-name>
+		<servlet-class>AddSubscriber</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addsubinfos</servlet-name>
+		<url-pattern>/addsubinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addsubinfos1</servlet-name>
+		<servlet-class>AddSubscriber2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addsubinfos1</servlet-name>
+		<url-pattern>/addsubinfo2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addsub</servlet-name>
+		<servlet-class>AddSubscriber1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addsub</servlet-name>
+		<url-pattern>/addsubinfo1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>outinfos</servlet-name>
+		<servlet-class>OutletDetails</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>outinfos</servlet-name>
+		<url-pattern>/outinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addoutinfos</servlet-name>
+		<servlet-class>AddOutletDetails</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addoutinfos</servlet-name>
+		<url-pattern>/addoutinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addoutinfos1</servlet-name>
+		<servlet-class>AddOutletDetails1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addoutinfos1</servlet-name>
+		<url-pattern>/addoutinfo1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>simstock</servlet-name>
+		<servlet-class>SimStock</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>simstock</servlet-name>
+		<url-pattern>/simstock</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addsimstock</servlet-name>
+		<servlet-class>AddSimStock</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addsimstock</servlet-name>
+		<url-pattern>/addsimstock</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>easystock</servlet-name>
+		<servlet-class>EasyStock</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>easystock</servlet-name>
+		<url-pattern>/easystock</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>paperstock</servlet-name>
+		<servlet-class>PaperStock</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>paperstock</servlet-name>
+		<url-pattern>/paperstock</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addpaperstock</servlet-name>
+		<servlet-class>AddPaperStock</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addpaperstock</servlet-name>
+		<url-pattern>/addpaperstock</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>docinfos</servlet-name>
+		<servlet-class>Documents</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>docinfos</servlet-name>
+		<url-pattern>/docinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>docinfos1</servlet-name>
+		<servlet-class>Documents1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>docinfos1</servlet-name>
+		<url-pattern>/docinfo1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>compinfos</servlet-name>
+		<servlet-class>Competatives</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>compinfos</servlet-name>
+		<url-pattern>/compinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addcompinfos</servlet-name>
+		<servlet-class>AddCompetatives</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addcompinfos</servlet-name>
+		<url-pattern>/addcompinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addcompinfos1</servlet-name>
+		<servlet-class>AddCompetatives1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addcompinfos1</servlet-name>
+		<url-pattern>/addcompinfo1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>categoryinfos</servlet-name>
+		<servlet-class>Category</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>categoryinfos</servlet-name>
+		<url-pattern>/categoryinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>categoryinfos1</servlet-name>
+		<servlet-class>Category1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>categoryinfos1</servlet-name>
+		<url-pattern>/categoryinfo1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>cardinfos</servlet-name>
+		<servlet-class>Card</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cardinfos</servlet-name>
+		<url-pattern>/cardinfo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>cardinfos1</servlet-name>
+		<servlet-class>Card1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cardinfos1</servlet-name>
+		<url-pattern>/cardinfo1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>usertReportProcess</servlet-name>
+		<servlet-class>UsertReportProcess</servlet-class>
+	</servlet>
+	<servlet-mapping>  
+		<servlet-name>usertReportProcess</servlet-name>
+		<url-pattern>/usertreportprocess</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>creditReport</servlet-name>
+		<servlet-class>CreditReport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>creditReport</servlet-name>
+		<url-pattern>/creditreport</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>creditReportProcess</servlet-name>
+		<servlet-class>CreditReportProcess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>creditReportProcess</servlet-name>
+		<url-pattern>/creditreportprocess</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>subscriberReport</servlet-name>
+		<servlet-class>SubscriberReport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>subscriberReport</servlet-name>
+		<url-pattern>/subinforeport</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>subscriberReportProcess</servlet-name>
+		<servlet-class>SubscriberReportProcess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>subscriberReportProcess</servlet-name>
+		<url-pattern>/subinforeportprocess</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>outletReport</servlet-name>
+		<servlet-class>OutletReport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>outletReport</servlet-name>
+		<url-pattern>/outinforeport</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>outletReportProcess</servlet-name>
+		<servlet-class>OutletReportProcess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>outletReportProcess</servlet-name>
+		<url-pattern>/outletreportprocess</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>stockReport</servlet-name>
+		<servlet-class>StockReport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>stockReport</servlet-name>
+		<url-pattern>/stockreport</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>stockReportProcess</servlet-name>
+		<servlet-class>StockReportProcess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>stockReportProcess</servlet-name>
+		<url-pattern>/stockreportprocess</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>stockReportProcess1</servlet-name>
+		<servlet-class>StockReportProcess1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>stockReportProcess1</servlet-name>
+		<url-pattern>/stockreportprocess1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>paymentProcess</servlet-name>
+		<servlet-class>PaymentProcess</servlet-class>
+  	</servlet>
+	<servlet-mapping>
+		<servlet-name>paymentProcess</servlet-name>
+		<url-pattern>/payments</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>processPaymentsProcess</servlet-name>
+		<servlet-class>ProcessPayments</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>processPaymentsProcess</servlet-name>
+		<url-pattern>/processPayments</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>balanceenquiry</servlet-name>
+		<servlet-class>Balance</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>balanceenquiry</servlet-name>
+		<url-pattern>/balance</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>balanceenquiry1</servlet-name>
+		<servlet-class>Balance1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>balanceenquiry1</servlet-name>
+		<url-pattern>/balance1</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list> 
+		<welcome-file>/jsp/Login.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
